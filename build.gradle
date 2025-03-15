@@ -32,6 +32,18 @@ repositories {
             includeGroup "maven.modrinth"
         }
     }
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Curseforge"
+                url = "https://cursemaven.com"
+            }
+        }
+        filter {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
 base {
@@ -149,7 +161,8 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
     // https://mvnrepository.com/artifact/com.hrznstudio/titanium
-    implementation 'maven.modrinth:titanium:Iv0p6iyx'
+    // api 'maven.modrinth:titanium:Iv0p6iyx'
+    // implementation "curse.maven:ato-405593:6118610"
 
 }
 
